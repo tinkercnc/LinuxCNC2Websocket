@@ -1,8 +1,8 @@
 var pos = {x: 0, y: 0, z: 0};
 var lastpos = {x: 0, y: 0, x: 0};
 
-var initWebSocket = function() { 
-    var ws = new WebSocket('ws://192.168.1.13:9000/ws');
+var initWebSocket = function(host) { 
+    var ws = new WebSocket('ws://'+host+'/ws');
 
     $(window).unload(function() {
 	ws.close();

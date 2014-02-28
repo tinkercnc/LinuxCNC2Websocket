@@ -12,6 +12,7 @@ class BroadcastWebSocketHandler(WebSocket):
 class Root(object):
     @cherrypy.expose
     def index(self):
+        host = cherrypy.request.headers['Host']
         return """<!DOCTYPE html>
     <html lang="en">
     <head>
@@ -24,7 +25,7 @@ class Root(object):
       <script type="application/javascript" src="/js/lcncview.js"> </script>
       <script type="application/javascript">
         $(document).ready(function() {
-          initWebSocket();
+          initWebSocket("%s");
           drawAll();
         });
       </script>
@@ -35,7 +36,7 @@ class Root(object):
     </section>
     </body>
     </html>
-    """
+    """ % host
 
     @cherrypy.expose
     def ws(self):
