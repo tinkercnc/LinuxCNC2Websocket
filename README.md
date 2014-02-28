@@ -9,11 +9,9 @@ Only for the webserver which can run on any ubuntu/debian machine in the net. (e
 	
 On the both machines:
 
-sudo apt-get install python-pip
-
-sudo apt-get install setuptools
-
-sudo pip install ws4py
+	sudo apt-get install python-pip
+	sudo apt-get install setuptools
+	sudo pip install ws4py
 
 
 Clone the repository to the lcnc machine (ie. to the home dir).
@@ -24,7 +22,7 @@ Copy the lcnc_poslogger_cherrypy_server.py file to the webserver machine and sta
 	
 change the line
 
-		aps = PosLogger(host='ws://[hostname or ip of the webserver]:9000/ws')
+	aps = PosLogger(host='ws://[hostname or ip of the webserver]:9000/ws')
 in
 
 	ws-pos-logger.py
@@ -38,10 +36,10 @@ In a terminal start
 
 .
 
-If there is no errors point the browser of your smartphone/tablet/pc etc
+If there are no errors point the browser of your smartphone/tablet/pc etc
 to the URL:
 
-http:/webserver-ip:9000
+	http:/webserver-ip:9000
 
 .
 
