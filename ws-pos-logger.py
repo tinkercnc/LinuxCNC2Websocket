@@ -5,6 +5,7 @@ Simple LinuxCNC WebSocket Position Logger
 """
 import time
 import math
+import sys
 
 import linuxcnc
 from ws4py.client.threadedclient import WebSocketClient
@@ -57,7 +58,13 @@ class PosLoggerSocketClient(WebSocketClient):
 			pass
 
 if __name__ == '__main__':
-	aps = PosLogger(host='ws://192.168.1.13:9000/ws')
+	argc = len(sys.argv)
+	if argc == 2:
+		h = sys.argv[1]
+	else:
+		h='localhost'
+		
+	aps = PosLogger(host='ws://%s:9000/ws' % h)
 	try:
 		aps.run()
 	except KeyboardInterrupt:
