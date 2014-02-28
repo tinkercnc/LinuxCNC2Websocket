@@ -19,27 +19,20 @@ Clone the repository to the lcnc machine (ie. to the home dir).
 Copy the lcnc_poslogger_cherrypy_server.py file to the webserver machine and start it:
 
 	python lcnc_poslogger_cherrypy_server.py
-	
-change the line
-
-	aps = PosLogger(host='ws://[hostname or ip of the webserver]:9000/ws')
-in
-
-	ws-pos-logger.py
 .
 
 Start linuxcnc.
 
 In a terminal start 
 
-	python ws-pos-logger.py
+	python ws-pos-logger.py &lt;webserver&gt;   #(IP or hostname)
 
 .
 
 If there are no errors point the browser of your smartphone/tablet/pc etc
 to the URL:
 
-	http:/webserver-ip:9000
+	http:/&lt;webserver&gt;:9000
 
 .
 
