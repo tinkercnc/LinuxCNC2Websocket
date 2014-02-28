@@ -1,4 +1,38 @@
 LinuxCNC2Websocket
 ==================
 
-LinuxCNC Web Position Logger a simple LinuxCNC2Websocket Broadcast example
+Installing on lucid/lcnc 2.5.3:
+
+Only for the webserver which can run on any ubuntu/debian machine in the net. (even on the lcnc machine)
+	sudo apt-get install python-cherrypy3
+	
+On the both machines:
+sudo apt-get install python-pip
+sudo apt-get install setuptools
+sudo pip install ws4py
+
+
+Clone the repository to the lcnc machine (ie. to the home dir).
+
+Copy the lcnc_poslogger_cherrypy_server.py file to the webserver machine and start it:
+	python lcnc_poslogger_cherrypy_server.py
+	
+change the line
+		aps = PosLogger(host='ws://<hostname or ip of the webserver>:9000/ws')
+in 
+	ws-pos-logger.py
+.
+
+Start linuxcnc.
+In a terminal start 
+	python ws-pos-logger.py
+.
+
+If there is no errors point the browser of your smartphone/tablet/pc etc
+to the URL:
+http:/webserver-ip:9000
+.
+
+Enjoy :)
+
+PS: you can connect as many browser as you want simultanously
