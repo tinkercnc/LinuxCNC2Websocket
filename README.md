@@ -36,7 +36,7 @@ In a terminal start
 
 .
 
-If there is no errors point the browser of your smartphone/tablet/pc etc
+If there are no errors point the browser of your smartphone/tablet/pc etc
 to the URL:
 
 	http:/webserver-ip:9000
