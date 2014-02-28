@@ -25,14 +25,14 @@ Start linuxcnc.
 
 In a terminal start 
 
-	python ws-pos-logger.py &lt;webserver&gt;   #(IP or hostname)
+	python ws-pos-logger.py \<webserver\>   #(IP or hostname)
 
 .
 
 If there are no errors point the browser of your smartphone/tablet/pc etc
 to the URL:
 
-	http:/&lt;webserver&gt;:9000
+	http:/\<webserver\>:9000
 
 .
 
