@@ -23,6 +23,7 @@ Copy the lcnc_poslogger_cherrypy_server.py file to the webserver machine and sta
 
 Start linuxcnc.
 
+cd to the cloned repository directory.
 In a terminal start 
 
 	python ws-pos-logger.py <webserver>   #(IP or hostname)
