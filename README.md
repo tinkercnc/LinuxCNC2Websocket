@@ -7,7 +7,7 @@ Only for the webserver which can run on any ubuntu/debian machine in the net. (e
 
 	sudo apt-get install python-cherrypy3
 	
-On the both machines:
+On both machines:
 
 	sudo apt-get install python-pip
 	sudo apt-get install setuptools
