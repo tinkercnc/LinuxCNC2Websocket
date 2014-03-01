@@ -38,4 +38,4 @@ to the URL:
 
 Enjoy :)
 
-PS: you can connect as many browser as you want simultaneously
+PS: you can connect as many browsers as you want simultaneously
