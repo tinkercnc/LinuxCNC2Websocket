@@ -10,16 +10,17 @@ Only for the webserver which can run on any ubuntu/debian machine in the net. (e
 On both machines:
 
 	sudo apt-get install python-pip
-	sudo apt-get install setuptools
+	sudo apt-get install python-setuptools
 	sudo pip install ws4py
 
 
 Clone the repository to the lcnc machine (ie. to the home dir).
 
-Copy the lcnc_poslogger_cherrypy_server.py file to the webserver machine and start it:
+Copy the lcnc_poslogger_cherrypy_server.py file to the machine which should act as a webserver and start it:
 
 	python lcnc_poslogger_cherrypy_server.py
-.
+	
+(lcnc_poslogger_cherrypy_server.py is the webserver).
 
 Start linuxcnc.
 
