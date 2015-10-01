@@ -34,7 +34,7 @@ In a terminal start
 If there are no errors point the browser of your smartphone/tablet/pc etc
 to the URL:
 
-	http:/<webserver>:9000
+	http://<webserver>:9000
 
 .
 
