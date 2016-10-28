@@ -111,8 +111,8 @@ var PlotTrackXY = function(lastpos, pos) {
 		//var phi = 3.14/6;
 	    strokeStyle: "#007BF7",
 	    strokeWidth: 2,
-	    x1: (lastpos.x*0.985+lastpos.y*0.174+pos.z*0.15)*2*0.985+150, y1: 400-((lastpos.y*10*0.174-lastpos.x*0.985)*0.174+lastpos.z*0.8)*4,
-	    x2: (pos.x*0.985+pos.y*0.174+pos.z*0.15)*2*0.985+150, y2: 400-((pos.y*10*0.174-pos.x*0.985)*0.174+pos.z*0.8)*4
+	    x1: (lastpos.x*0.985+lastpos.y*0.174+pos.z*0.15)*100*0.985+150, y1: 400-((lastpos.y*10*0.174-lastpos.x*0.985)*0.174+lastpos.z*0.8)*100,
+	    x2: (pos.x*0.985+pos.y*0.174+pos.z*0.15)*100*0.985+150, y2: 400-((pos.y*10*0.174-pos.x*0.985)*0.174+pos.z*0.8)*100
 	});
 };
 
