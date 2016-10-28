@@ -9,10 +9,7 @@ Only for the webserver which can run on any ubuntu/debian machine in the net. (e
 	
 On both machines:
 
-	sudo apt-get install python-pip
-	sudo apt-get install python-setuptools
-	sudo pip install ws4py
-
+	sudo apt-get install python-ws4py
 
 Clone the repository to the lcnc machine (ie. to the home dir).
 
